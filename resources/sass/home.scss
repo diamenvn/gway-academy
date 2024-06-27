@@ -1,0 +1,52 @@
+.brand {
+    background: #FAFAFA;
+
+    &__lists {
+        padding: 40px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+}
+
+.post {
+    &__title {
+        font-size: 36px;
+        font-weight: 700;
+
+    }
+
+    &__description {
+        padding: 52px 0px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 180%;
+        /* 36px */
+        letter-spacing: 0.4px;
+        color: #555;
+    }
+}
+
+.course {
+    &__title {
+        font-size: 40px;
+        font-weight: 600;
+    }
+}
+.btn-see-more {
+    font-size: 22px;
+    font-weight: 400;
+    color: #7F7F7F;
+    &:hover {
+        color: #0063B1;
+    }
+}
+
+.gap-13 {
+    gap: 13px;
+}
+
+.link {
+    text-decoration: underline;
+}

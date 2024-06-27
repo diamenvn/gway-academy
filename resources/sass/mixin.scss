@@ -1,0 +1,18 @@
+$ranges: 0, 50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000;
+
+@each $range in $ranges {
+  .bg-gray-#{$range} {
+    --tw-bg-opacity: 1;
+    background-color: rgb(var(--gray-#{$range})/var(--tw-bg-opacity));
+  }
+
+  .text-gray-#{$range} {
+    --tw-bg-opacity: 1;
+    color: rgb(var(--gray-#{$range})/var(--tw-bg-opacity));
+  }
+
+  .border-gray-#{$range} {
+    --tw-bg-opacity: 1;
+    border: 1px solid rgb(var(--gray-#{$range})/var(--tw-bg-opacity));
+  }
+}
