@@ -1,16 +1,82 @@
 <section id="secion-banner" class="gway-section section section--spacing">
-    <div class="post">
+    <div class="recent-posts">
         <div class="container">
-            <div class="row gap-13 flex-nowrap">
-                <div class="col-md-6 col-xs-12">
-                    <div class="d-flex flex-column justify-content-center">
-                        <div class="post__title">Khởi đầu hành trình kinh doanh <span class="co-primary">ngay hôm nay</span></div>
-                        <div class="post__description">Tại Innovator Academy, chúng tôi cam kết mang đến những khóa học chất lượng và thực tiễn trong lĩnh vực. Với đội ngũ giảng viên giàu kinh nghiệm và phương pháp giảng dạy hiện đại, chúng tôi đã giúp hàng ngàn học viên đạt được thành công vượt bậc trong sự nghiệp.</div>
-                        <a class="link btn-see-more" href="">Tìm hiểu thêm</a>
-                    </div>
+            <div class="row align-items-center gap-13">
+                <div class="col">
+                    <span class="section__title d-block">Bài viết nổi bật</span>
+                    <span class="section__sub-title d-block">Tổng hợp các bài viết chia sẻ về kinh nghiệm miễn phí và các tin tức sự kiện</span>
                 </div>
-                <div class="col-md-6 col-xs-12">
-                    <img class="w-100" src="{{asset('assets/images/Group 50.png')}}" alt="">
+                <div class="col-auto">
+                    <div class="btn btn-secondary fs-16">Xem tất cả</div>
+                </div>
+            </div>
+            <div class="row recent-posts__content">
+                <div class="col-xs-12 col-xl-6">
+                    <a href="" class="d-block recent-posts__item recent-posts__item--fullsize">
+                        <div class="d-flex flex-wrap">
+                            <div class="col">
+                                <div class="item item__image">
+                                    <img class="w-100" src="{{asset('assets/images/dropshipping-la-gi1.jpeg')}}" alt="">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="item item__title">Bí Quyết Thành Công Với Dropship: Khám Phá Chiến Lược Đỉnh Cao</div>
+                                <div class="item item__tag item__tag--info">Dropship</div>
+                                <div class="item item__desc">Bạn đang muốn khởi nghiệp với mô hình dropship nhưng chưa biết bắt đầu từ đâu? Hãy cùng chúng tôi khám phá những chiến lược đỉnh cao để xây dựng một cửa hàng dropship thành công. Khóa học của chúng tôi sẽ trang bị cho bạn kiến thức từ cơ
+                                    bản đến
+                                    nâng cao, giúp bạn tự tin trên con đường kinh doanh trực tuyến.</div>
+                                <div class="item item__datetime">24/06/2024</div>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+                <div class="col-xs-12 col-xl-6">
+                    <a href="" class="d-block recent-posts__item recent-posts__item">
+                        <div class="d-flex flex-wrap">
+                            <div class="col">
+                                <div class="item item__image h-100">
+                                    <img class="w-100 h-100 object-fit-cover" src="{{asset('assets/images/8cd390dcf90bab80ae6580aa9b66e4af.png')}}" alt="">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="item item__title">Làm Chủ Sàn Amazon: Từ Người Mới Đến Chuyên Gia</div>
+                                <div class="item item__tag item__tag--info">Dropship</div>
+                                <div class="item item__desc">Amazon là một thị trường tiềm năng nhưng cũng đầy thách thức. Để trở thành người bán hàng thành công trên Amazo sử dụng công cụ quảng cáo hiệu quả.</div>
+                                <div class="item item__datetime">24/06/2024</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-block recent-posts__item recent-posts__item">
+                        <div class="d-flex flex-wrap">
+                            <div class="col">
+                                <div class="item item__image h-100">
+                                    <img class="w-100 h-100 object-fit-cover" src="{{asset('assets/images/adda3d1e3b8d49597ad63ea4c047acbc.png')}}" alt="">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="item item__title">Livestream Bán Hàng: Nghệ Thuật Tăng Doanh Số Tức Thì</div>
+                                <div class="item item__tag item__tag--info">Dropship</div>
+                                <div class="item item__desc">Livestream bán hàng đang trở thành xu hướng hot giúp tăng doanh số một cách nhanh chóng. Nhưng làm thế nào để thực hiện một buổi livestream thành công?</div>
+                                <div class="item item__datetime">24/06/2024</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-block recent-posts__item recent-posts__item">
+                        <div class="d-flex flex-wrap">
+                            <div class="col">
+                                <div class="item item__image h-100">
+                                    <img class="w-100 h-100 object-fit-cover" src="{{asset('assets/images/b10e8bac60b851ecf350226c61567941.png')}}" alt="">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="item item__title">Thành Công Với Kinh Doanh Trực Tuyến: Hành Trình Từ A Đến Z</div>
+                                <div class="item item__tag item__tag--info">Dropship</div>
+                                <div class="item item__desc">Kinh doanh trực tuyến không chỉ là một xu hướng mà còn là cơ hội để bạn khẳng định bản thân và tạo ra nguồn thu nhập ổn định.</div>
+                                <div class="item item__datetime">24/06/2024</div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>

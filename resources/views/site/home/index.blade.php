@@ -9,4 +9,5 @@
 @include('site.home.training-method')
 @include('site.home.review-by-customer')
 @include('site.home.recent-posts')
+@include('site.home.list-question')
 @endsection
