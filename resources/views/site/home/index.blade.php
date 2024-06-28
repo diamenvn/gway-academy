@@ -8,4 +8,5 @@
 @include('site.home.professional')
 @include('site.home.training-method')
 @include('site.home.review-by-customer')
+@include('site.home.recent-posts')
 @endsection
