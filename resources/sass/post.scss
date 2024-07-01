@@ -1,0 +1,17 @@
+#section-post {
+    .post {
+        border: 1px solid #D4D4D4;
+        border-radius: 12px;
+        padding: 24px;
+        margin-bottom: 24px;
+        .item__image {
+            max-height: 280px;
+            min-height: 280px;
+            height: 280px;
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

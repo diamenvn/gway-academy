@@ -11,6 +11,11 @@ class PostController extends Controller
      */
     public function index(): View
     {
-        return view('site.course.general-information');
+        return view('site.post.index');
+    }
+
+    public function show($id): View
+    {
+        return view('site.post.detail')->with('id', $id);
     }
 }
