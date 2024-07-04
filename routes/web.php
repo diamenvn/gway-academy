@@ -4,6 +4,10 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AppController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\AboutusController;
+use App\Http\Controllers\LeadershipController;
+use App\Http\Controllers\ContactusController;
+use App\Http\Controllers\ServiceController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,3 +26,7 @@ Route::get('/course/lesson-information', [CourseController::class, 'lessonInform
 Route::get('/course/rating', [CourseController::class, 'rating'])->name('course/rating');
 
 Route::resource('/posts', PostController::class);
+Route::resource('/about-us', AboutusController::class);
+Route::resource('/leadership', LeadershipController::class);
+Route::resource('/contact-us', ContactusController::class);
+Route::resource('/service', ServiceController::class);

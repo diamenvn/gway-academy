@@ -2,6 +2,8 @@
 @import "./home.scss";
 @import "./course.scss";
 @import "./post.scss";
+@import "./about-us.scss";
+@import "./leadership.scss";
 
 html:root {
   --app-header-height: 96px;
@@ -150,6 +152,52 @@ body {
   }
 }
 
+#section-contact-form {
+  background: #F4F4F4;
+  .card {
+    border: none;
+    padding: 24px;
+    background: #fff;
+    border-radius: 16px;
+  }
+}
+
+#section-service {
+  .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 50px 30px ;
+    border-radius: var(--Spacing-3, 12px);
+
+    border: 1px solid var(--Border-Border-default, #D4D4D4);
+
+    background: var(--Background-Background-gray, #FAFAFA);
+    /* Card shadow */
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.08);
+  }
+  .card__header {
+    background: #FFEDCC;
+    border-radius: 8px;
+    padding: 12px 22px;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .card__body {
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.flex-1 {
+  flex: 1;
+}
+
 .footer {
   background: var(--app-color-footer);
   padding: 100px 0px;
@@ -251,6 +299,10 @@ h3 {
 
 .text-align-right {
   text-align: right;
+}
+
+.text-align-justify {
+  text-align: justify;
 }
 
 a {

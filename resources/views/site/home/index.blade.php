@@ -1,4 +1,5 @@
 @extends('site.layout.master')
+@section('title', "Innovator Academy")
 
 @section('content')
 @include('site.home.banner')

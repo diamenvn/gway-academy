@@ -1,4 +1,5 @@
 @extends('site.layout.master')
+@section('title', "Bài viết")
 
 @section('content')
 <section id="section-post" class="gway-section section section--spacing">

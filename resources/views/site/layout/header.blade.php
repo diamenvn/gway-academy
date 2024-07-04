@@ -2,9 +2,9 @@
     <div class="container h-100">
         <div class="d-flex align-items-center justify-content-between flex-nowrap h-100">
             <div class="header__item">
-                <div class="logo">
+                <a href="/" class="logo d-block">
                     <img src="{{asset('assets/images/logo.png')}}" alt="" srcset="">
-                </div>
+                </a>
             </div>
             <div class="header__item">
                 @include('site.module.menu')
