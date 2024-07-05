@@ -1,7 +1,7 @@
 <section id="secion-banner" class="gway-section section section--spacing">
     <div class="professional course">
         <div class="container">
-            <div class="row gap-13 align-items-center">
+            <div class="row align-items-center">
                 <div class="col-md-4 position-relative col-12">
                     <span class="section__title">Đội ngũ chuyên gia</span>
                     <div class="section__text-small text-gray-700 mt-2">Có kiến thức sâu rộng và kinh nghiệm thực tế, sẵn sàng chia sẻ cùng học viên trong quá trình học tập</div>

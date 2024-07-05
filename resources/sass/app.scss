@@ -76,10 +76,6 @@ body {
     display: none;
   }
 
-  .header__item__menu {
-    display: none;
-  }
-
   @include responsive(phone) {
     .header__item__menu {
       position: fixed;
@@ -88,6 +84,7 @@ body {
       z-index: 99;
       height: 100vh;
       overflow: hidden;
+      display: none;
       .header__menu {
         background: #fff;
         padding: 25px 0px;

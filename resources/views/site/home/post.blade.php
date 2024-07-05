@@ -1,7 +1,7 @@
 <section id="secion-banner" class="gway-section section section--spacing">
     <div class="post">
         <div class="container">
-            <div class="row gap-13">
+            <div class="row">
                 <div class="col-md-6 col-12">
                     <div class="d-flex flex-column justify-content-center">
                         <div class="post__title fs-24-mobile">Khởi đầu hành trình kinh doanh <span class="co-primary">ngay hôm nay</span></div>
