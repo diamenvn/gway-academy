@@ -1,106 +1,135 @@
 #section-banner-about-us {
-    .banner {
-        width: 100%;
-        max-height: 280px;
-        height: 280px;
-        background-position: center;
-        background-image: url("/public/assets/images/4ca113c1acc63f0d6b2a19750f974ec7.png");
-        background-size: cover;
-        background-repeat: no-repeat;
+  .banner {
+    width: 100%;
+    max-height: 280px;
+    height: 280px;
+    background-position: center;
+    background-image: url("/public/assets/images/4ca113c1acc63f0d6b2a19750f974ec7.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  @include responsive(phone) {
+    .row {
+      justify-content: center !important;
+      flex-direction: column;
+      gap: 20px;
     }
+  }
 }
 
 #section-vision-mission {
-    .card {
-        color: #696984;
-        font-size: 18px;
-        font-weight: 400;
-        text-align: center;
-        position: relative;
-        border: none;
-        padding: 64px 24px;
-        border-radius: 16px;
-        background: #fff;
-        box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.12);
-        .icon {
-            position: absolute;
-            top: -40px;
-            left: 50%;
-            transform: translate(-50%, 0);
+  .card {
+    color: #696984;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+    border: none;
+    padding: 64px 24px;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.12);
+    .icon {
+      position: absolute;
+      top: -40px;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+  .col-md-4 {
+    @include responsive(desktop) {
+      --bs-gutter-x: 64px;
+    }
+    @include responsive(phone) {
+      &:not(:last-child) {
+        .card {
+          margin-bottom: 60px;
         }
+      }
     }
-    .col-4 {
-        --bs-gutter-x: 64px;
-    }
+  }
 }
 
-#section-achievements, #section-founder {
-    .text-1 {
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 28px;
-        color: #555;
-        strong {
-            color: #FCAF17;
-        }
+#section-achievements,
+#section-founder {
+  .text-1 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #555;
+    strong {
+      color: #fcaf17;
     }
+  }
 
-    .text-2 {
-        color: #B4CD26;
-        font-size: 64px;
-        font-weight: 700;
-        line-height: 102.4px;
-    }
-    .text-3 {
-        font-size: 24px;
-        line-height: 32px;
-        color: #404040;
-    }
+  .text-2 {
+    color: #b4cd26;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 102.4px;
+  }
+  .text-3 {
+    font-size: 24px;
+    line-height: 32px;
+    color: #404040;
+  }
 }
 
-#section-founder, #section-founder-detail, #section-see-more {
-    .card {
-        strong {
-            color: #FCAF17;
-        }
-        border: none;
-        &__image {
-            height: 480px;
-            background: #EAEAEA;
-            border-radius: 16px;
-        }
+#section-founder,
+#section-founder-detail,
+#section-see-more {
+  .card {
+    strong {
+      color: #fcaf17;
     }
+    border: none;
+    &__image {
+      height: 480px;
+      background: #eaeaea;
+      border-radius: 16px;
+      overflow: hidden;
+      @include responsive(phone) {
+        height: 240px;
+      }
+    }
+    @include responsive(phone) {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 #section-gallery-company {
-    background: #FFFBF1;
-    padding: 100px 0px;
-    img {
-        border-radius: 16px;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+  background: #fffbf1;
+  padding: 100px 0px;
+  img {
+    border-radius: 16px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .list-image {
+    .row div {
+      margin-bottom: calc(var(--bs-gutter-x) * 1);
     }
-    .list-image {
-        .row div {
-            margin-bottom: calc(var(--bs-gutter-x)* 1);
-        }
-    }
+  }
 }
 
 #section-register-now {
-    .text-1 {
-        font-size: 48px;
-        font-weight: 600;
-        line-height: 120%;
-        strong {
-            color: #FCAF17;
-        }
+  .text-1 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 120%;
+    strong {
+      color: #fcaf17;
     }
+  }
 
-    .box {
-        border-radius: 12px;
-        background: #FAFAFA;
-        padding: 80px;
+  .box {
+    border-radius: 12px;
+    background: #fafafa;
+    padding: 80px;
+    @include responsive(phone) {
+      padding: 0px;
     }
+  }
 }

@@ -1,4 +1,4 @@
-<div class="col-md-4 col-xs-6 col-xl-4 mb-3">
+<div class="col-md-4 col-xs-6 col-xl-4 mb-3 col-6">
     <div class="course__card course__card--small">
         <div class="card__image card__item">
             <img src="{{$img}}" alt="">

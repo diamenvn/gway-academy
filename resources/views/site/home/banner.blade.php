@@ -1,6 +1,6 @@
 <section id="secion-banner" class="gway-section section">
     <div class="banner-home d-flex flex-column align-items-center justify-content-center">
-        <div class="banner-home__title d-flex align-items-center position-relative">
+        <div class="banner-home__title d-flex align-items-center position-relative white-space-nowrap">
             <div class="banner-home__icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -10,8 +10,7 @@
             </div>
             <span>Innovate Today,</span> Grow Tomorrow
             <div class="banner-home__arrow position-absolute">
-                <svg xmlns="http://www.w3.org/2000/svg" width="39" height="43" viewBox="0 0 39 43"
-                    fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="39" height="43" viewBox="0 0 39 43" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M13.0489 40.1279C9.32492 39.0762 5.42609 38.5457 1.64397 38.0597C0.829355 37.9578 0.0730442 38.5264 0.0148577 39.3274C-0.101515 40.129 0.480691 40.8622 1.23712 40.9641C4.90286 41.4319 8.68465 41.9326 12.234 42.945C12.9904 43.1646 13.8054 42.7126 14.0381 41.9349C14.2709 41.1579 13.8053 40.348 13.0489 40.1279Z"
                         fill="white" />

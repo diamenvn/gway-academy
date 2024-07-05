@@ -1,4 +1,5 @@
 @import "bootstrap/scss/bootstrap";
+@import "./mixin.scss";
 @import "./home.scss";
 @import "./course.scss";
 @import "./post.scss";
@@ -31,18 +32,92 @@ body {
 }
 
 .header {
-  height: var(--app-header-height);
+  @include responsive(desktop) {
+    height: var(--app-header-height);
+    .icon-show-menu {
+      display: none;
+    }
+  }
+  @include responsive(phone) {
+    padding: 8px 16px;
+  }
   border-bottom: 1px solid #d4d4d4;
+  .icon-show-menu {
+    padding: 8px;
+    border-radius: 4px;
+    z-index: 88;
+    background: #f4f4f4;
+  }
   &__item {
     width: auto;
     .btn {
       --bs-btn-padding-y: 0.575rem;
       --bs-btn-padding-x: 1.575rem;
     }
+    @include responsive(phone) {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      width: 100%;
+    }
   }
   .logo {
     width: 232px;
     height: 80px;
+    @include responsive(phone) {
+      width: 116px;
+      height: 40px;
+    }
+  }
+
+  .icon-arrow {
+    display: none;
+  }
+
+  .header__item__menu {
+    display: none;
+  }
+
+  @include responsive(phone) {
+    .header__item__menu {
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 99;
+      height: 100vh;
+      overflow: hidden;
+      .header__menu {
+        background: #fff;
+        padding: 25px 0px;
+      }
+      .header__heading {
+        display: flex !important;
+        margin-bottom: 20px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px !important;
+      }
+      .header__menu__lists {
+        flex-wrap: wrap !important;
+      }
+      li {
+        width: 100%;
+        text-align: left;
+        position: relative;
+        padding-right: 20px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        .icon-arrow {
+          display: block;
+          position: absolute;
+          right: 0;
+          top: 25%;
+          translate: translate(-50%, 0);
+        }
+      }
+    }
   }
 
   img {
@@ -57,6 +132,7 @@ body {
     color: #404040;
     font-size: 16px;
     font-weight: 500;
+
     li {
       border-radius: 8px;
       user-select: none;
@@ -78,10 +154,19 @@ body {
   }
 }
 
+@include responsive(phone) {
+  .flex-direction-column-reverse-mobile {
+    flex-direction: column-reverse;
+  }
+}
+
 .section {
   margin-top: var(--spacing-section-desktop);
   &--spacing {
     padding: 80px 0px;
+    @include responsive(phone) {
+      padding: 24px 0px;
+    }
   }
   &__title {
     font-size: 40px;
@@ -107,6 +192,11 @@ body {
   height: 592px;
   background-position: center;
   background: linear-gradient(0deg, rgba(252, 175, 23, 0.2) 0%, rgba(252, 175, 23, 0.2) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("/public/assets/images/f8643198f03a41d8bfd1434811fa8894.jpg") lightgray 50% / cover no-repeat;
+  @include responsive(phone) {
+    padding: 0px 26px;
+    max-height: 630px;
+    height: 630px;
+  }
   &__title {
     background: rgb(var(--gray-0));
     font-size: 48px;
@@ -117,6 +207,9 @@ body {
     gap: 10px;
     span {
       color: var(--app-color-primary);
+    }
+    @include responsive(phone) {
+      font-size: 16px;
     }
   }
   &__icon {
@@ -132,6 +225,10 @@ body {
   &__arrow {
     top: -50px;
     left: -26px;
+    @include responsive(phone) {
+      top: -35px;
+      left: -20px;
+    }
   }
   &__primary-text {
     font-size: 38px;
@@ -140,6 +237,10 @@ body {
     line-height: 150%; /* 57px */
     margin-top: 20px;
     color: #fff;
+    @include responsive(phone) {
+      font-size: 24px;
+      text-align: center;
+    }
   }
 
   &__description-text {
@@ -149,11 +250,14 @@ body {
     line-height: 150%; /* 57px */
     margin-top: 10px;
     color: #fff;
+    @include responsive(phone) {
+      text-align: center;
+    }
   }
 }
 
 #section-contact-form {
-  background: #F4F4F4;
+  background: #f4f4f4;
   .card {
     border: none;
     padding: 24px;
@@ -167,17 +271,17 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding: 50px 30px ;
+    padding: 50px 30px;
     border-radius: var(--Spacing-3, 12px);
 
-    border: 1px solid var(--Border-Border-default, #D4D4D4);
+    border: 1px solid var(--Border-Border-default, #d4d4d4);
 
-    background: var(--Background-Background-gray, #FAFAFA);
+    background: var(--Background-Background-gray, #fafafa);
     /* Card shadow */
     box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.08);
   }
   .card__header {
-    background: #FFEDCC;
+    background: #ffedcc;
     border-radius: 8px;
     padding: 12px 22px;
     font-size: 22px;
@@ -201,6 +305,13 @@ body {
 .footer {
   background: var(--app-color-footer);
   padding: 100px 0px;
+  @include responsive(phone) {
+    padding: 24px 16px;
+    .row > .col-md-6,
+    .row > .col-md-2 {
+      margin-bottom: 50px;
+    }
+  }
 }
 h1,
 h2,
@@ -334,4 +445,37 @@ a {
   .container {
     max-width: 1520px;
   }
+}
+
+.hidden-in-mobile {
+  @include responsive(phone) {
+    display: none;
+  }
+}
+
+.px-0-mobile {
+  @include responsive(phone) {
+    padding-inline: 0px !important;
+  }
+}
+
+@include responsive(phone) {
+  .mt-0-mobile {
+    margin-top: 0 !important;
+  }
+  .px-2-mobile {
+    padding-inline: 1rem;
+  }
+  .px-1-mobile {
+    padding-inline: 0.75rem !important;
+  }
+  .mb-24px-mobile {
+    margin-bottom: 24px;
+  }
+  .gap-30-mobile {
+    gap: 30px;
+  }
+}
+.white-space-nowrap {
+  white-space: nowrap;
 }

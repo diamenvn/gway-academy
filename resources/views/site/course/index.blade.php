@@ -3,7 +3,7 @@
 @section('content')
 <section id="secion-course" class="gway-section section section--spacing">
     <div class="container">
-        <div class="row">
+        <div class="row hidden-in-mobile">
             <div class="col-12">
                 <div class="btn btn-back mb-60px" role="button">
                     <a href="" class="d-block">
@@ -16,10 +16,11 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-8">
-                <div class="fs-48 fw-700">Khóa học Dropship</div>
-                <div class="fs-20 fw-400 text-gray-500 mt-20px">Khóa học Dropship tại Innovator Academy được thiết kế để giúp bạn bước chân vào thế giới kinh doanh trực tuyến một cách dễ dàng và hiệu quả. Với phương pháp giảng dạy sinh động, chúng tôi sẽ dẫn dắt bạn từ những bước đầu tiên đến khi
+        <div class="row flex-direction-column-reverse-mobile">
+            <div class="col-md-8 col-12">
+                <div class="fs-48 fw-700 fs-20-mobile">Khóa học Dropship</div>
+                <div class="fs-20 fw-400 text-gray-500 mt-20px fs-16-mobile">Khóa học Dropship tại Innovator Academy được thiết kế để giúp bạn bước chân vào thế giới kinh doanh trực tuyến một cách dễ dàng và hiệu quả. Với phương pháp giảng dạy sinh động, chúng tôi sẽ dẫn dắt bạn từ những bước đầu
+                    tiên đến khi
                     bạn
                     có thể
                     tự tin quản
@@ -33,7 +34,7 @@
                 </div>
                 @yield('course-page')
             </div>
-            <div class="col-4">
+            <div class="col-md-4 col-12">
                 <div class="widget">
                     <div class="w-100 h-auto mb-24px">
                         <img class="w-100 border-radius-8px" src="{{asset('assets/images/dd192c77a3555738ea4c509fac562db6.png')}}" alt="" srcset="">
@@ -48,7 +49,7 @@
                                                 d="M8.22538 18.2941C8.44586 18.3883 8.70221 18.3097 8.83098 18.1062L14.6904 8.79635C14.7852 8.64566 14.791 8.4554 14.7051 8.29996C14.6193 8.14404 14.4553 8.04723 14.2774 8.04723H10.3669L11.8212 2.27545C11.8799 2.04228 11.7611 1.80146 11.5404 1.70657C11.321 1.61217 11.063 1.6913 10.9348 1.89443L5.07538 11.2043C4.98049 11.355 4.97476 11.5453 5.0606 11.7007C5.14644 11.8566 5.31047 11.9534 5.48834 11.9534H9.39888L7.94452 17.7252C7.88586 17.9584 8.00458 18.1992 8.22538 18.2941Z"
                                                 fill="#FFDD2B" />
                                         </svg>
-                                        <span class="fw-500" style="line-height: 18px">Ưu đãi đặc biệt</span>
+                                        <span class="fw-500 fs-12-mobile" style="line-height: 18px">Ưu đãi đặc biệt</span>
                                     </div>
                                     <div class="w-100 mt-2">
                                         <span class="fs-20 fw-500" style="line-height: 32px">11.290.000đ</span>
@@ -59,7 +60,7 @@
                                     </div>
                                 </div>
                                 <div class="col-auto text-align-right">
-                                    <div class="w-100">Kết thúc sau</div>
+                                    <div class="w-100 fs-12-mobile">Kết thúc sau</div>
                                     <div class="d-flex align-items-center mt-2">
                                         <span class="d-flex align-items-center justify-content-center border-radius-8px bg-gray-0" style="background: rgba(255, 255, 255, 0.30); width: 38px; height: 38px;">10</span>
                                         <span class="fs-25 px-1">:</span>
@@ -67,7 +68,7 @@
                                         <span class="fs-25 px-1">:</span>
                                         <span class="d-flex align-items-center justify-content-center border-radius-8px bg-gray-0" style="background: rgba(255, 255, 255, 0.30); width: 38px; height: 38px;">15</span>
                                     </div>
-                                    <div class="w-100 mt-2">12 người đã đặt</div>
+                                    <div class="w-100 fs-12-mobile mt-2">12 người đã đặt</div>
                                 </div>
                             </div>
                         </div>

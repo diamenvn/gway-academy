@@ -1,5 +1,5 @@
 <section id="secion-banner" class="gway-section section">
-    <div class="brand">
+    <div class="brand overflow-auto">
         <div class="container">
             <div class="brand__lists">
                 <div class="brand__item">

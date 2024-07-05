@@ -1,3 +1,16 @@
+@mixin responsive($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop {
+    @media (min-width: 600px) {
+      @content;
+    }
+  }
+}
+
 $ranges: 0, 50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000;
 
 @each $range in $ranges {
@@ -20,6 +33,11 @@ $ranges: 0, 50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000;
 @for $fontSize from 10 through 80 {
   .fs-#{$fontSize} {
     font-size: #{$fontSize}px;
+  }
+  .fs-#{$fontSize}-mobile {
+    @include responsive(phone) {
+      font-size: #{$fontSize}px !important;
+    }
   }
 }
 

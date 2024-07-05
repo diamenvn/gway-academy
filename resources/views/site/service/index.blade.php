@@ -6,11 +6,11 @@
     <div class="container">
         <div class="row mt-20px mb-60px">
             <div class="col-12 text-align-center">
-                <span class="fs-32 fw-700">Dịch vụ vận hành triển khai</span>
+                <span class="fs-32 fw-700 fs-24-mobile">Dịch vụ vận hành triển khai</span>
             </div>
         </div>
-        <div class="row mt-60px justify-content-around">
-            <div class="col-6">
+        <div class="row mt-60px gap-30-mobile justify-content-around">
+            <div class="col-md-6 col-12">
                 <div class="card">
                     <div class="card__header">Gói RE REVIEW & EVALUATION</div>
                     <div class="text-align-center mt-40px mb-40px">
@@ -55,7 +55,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-md-6 col-12">
                 <div class="card">
                     <div class="card__header">LEGAL PACK</div>
                     <div class="text-align-center mt-40px mb-40px">
@@ -95,8 +95,8 @@
                 </div>
             </div>
         </div>
-        <div class="row mt-40px">
-            <div class="col-4">
+        <div class="row gap-30-mobile mt-40px">
+            <div class="col-md-4 col-12">
                 <div class="card">
                     <div class="card__header">Gói giải pháp cơ bản PLATIUM</div>
                     <div class="text-align-center mt-40px mb-40px">
@@ -135,7 +135,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-md-4 col-12">
                 <div class="card">
                     <div class="card__header">Gói giải pháp nâng cao TITAN</div>
                     <div class="text-align-center mt-40px mb-40px">
@@ -174,7 +174,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-md-4 col-12">
                 <div class="card">
                     <div class="card__header">Gói đồng hành phát triển DIAMOND</div>
                     <div class="text-align-center mt-40px mb-40px">
@@ -238,7 +238,7 @@
             </div>
         </div>
         <div class="row mt-60px justify-content-around">
-            <div class="col-6">
+            <div class="col-md-6 col-12">
                 <div class="card">
                     <div class="card__header">Đào tạo 1-1 (6 tháng)</div>
                     <div class="text-align-center mt-40px mb-40px">
@@ -277,7 +277,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-md-6 col-12">
                 <div class="card">
                     <div class="card__header">Đào tạo 1-1 nâng cao và chuyên sâu (1 - 3 năm)</div>
                     <div class="text-align-center mt-40px mb-40px">
@@ -325,4 +325,4 @@
         </div>
     </div>
 </section>
-@endsection 
+@endsection

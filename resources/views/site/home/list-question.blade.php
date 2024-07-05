@@ -1,13 +1,13 @@
 <section id="secion-banner" class="gway-section section section--spacing">
     <div class="list-question">
-        <div class="container">
-            <div class="list-question__page">
+        <div class="list-question__page">
+            <div class="container">
                 <div class="row">
-                    <div class="col-5">
-                        <div class="section__title">Câu hỏi thường gặp</div>
+                    <div class="col-12 col-md-5 mb-5">
+                        <div class="section__title fs-24-mobile">Câu hỏi thường gặp</div>
                         <div class="sub-title fs-18 mt-2">Nếu có câu hỏi khác, vui lòng liên hệ với chúng tôi qua hòm thư: <u><a style="color: inherit" href="mailto:innovatoracaddemy@gmail.com">Innovatoracaddemy@gmail.com</a></u></div>
                     </div>
-                    <div class="col-7">
+                    <div class="col-12 col-md-7">
                         <div class="question-item">
                             <div class="question-item__item d-flex align-items-center justify-content-between question-item__title w-100 fs-20 fw-600">
                                 <span>1. Làm thế nào để đăng ký khoá học?</span>

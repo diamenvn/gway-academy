@@ -1,7 +1,7 @@
 <footer class="footer footer__layout">
     <div class="container">
         <div class="row">
-            <div class="col-6">
+            <div class="col-md-6 col-12">
                 <div class="row gap-18">
                     <div class="col-12">
                         <img src="{{asset('assets/images/LOGO đen.png')}}" alt="">
@@ -40,7 +40,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-2">
+            <div class="col-md-2 col-12">
                 <div class="d-flex text-gray-700 flex-column gap-18">
                     <div class="col-12 text-gray-700 mb-3"><span class="fs-20 fw-700">Giới thiệu</span></div>
                     <div class="col-12 text-gray-700"><a href="#">Sản phẩm và dịch vụ</a></div>
@@ -49,7 +49,7 @@
                     <div class="col-12 text-gray-700"><a href="#">Thành tựu và dự án</a></div>
                 </div>
             </div>
-            <div class="col-2">
+            <div class="col-md-2 col-12">
                 <div class="d-flex text-gray-700 flex-column gap-18">
                     <div class="col-12 text-gray-700 mb-3"><span class="fs-20 fw-700">Về chúng tôi</span></div>
                     <div class="col-12 text-gray-700"><a href="#">Sứ mệnh và tầm nhìn</a></div>
@@ -58,7 +58,7 @@
                     <div class="col-12 text-gray-700"><a href="#">Chính sách và điều khoản</a></div>
                 </div>
             </div>
-            <div class="col-2">
+            <div class="col-md-2 col-12">
                 <div class="d-flex text-gray-700 flex-wrap gap-18">
                     <div class="col-12 text-gray-700 mb-3"><span class="fs-20 fw-700">Kết nối với chúng tôi</span></div>
                     <div class="col-auto"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

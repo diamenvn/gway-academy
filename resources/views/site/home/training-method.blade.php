@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-12">
-                    <span class="section__title">Phương pháp đào tạo</span>
+                    <span class="section__title fs-24-mobile">Phương pháp đào tạo</span>
                 </div>
                 <div class="col-12">
                     <div class="row">

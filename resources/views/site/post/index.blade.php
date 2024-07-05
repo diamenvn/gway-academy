@@ -9,12 +9,12 @@
                 <div class="text-gray-800 fs-28 fw-600">Bài viết</div>
             </div>
             <div class="col-auto">
-                <select class="form-select" aria-label="Default select example" style="min-width: 300px">
+                <select class="form-select" aria-label="Default select example">
                     <option selected>Tất cả</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
                     <option value="3">Three</option>
-                  </select>
+                </select>
             </div>
         </div>
         <div class="row mt-40px">
@@ -129,4 +129,4 @@
         </div>
     </div>
 </section>
-@endsection 
+@endsection

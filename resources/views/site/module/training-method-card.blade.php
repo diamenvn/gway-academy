@@ -1,4 +1,4 @@
-<div class="col-4 mb-4">
+<div class="col-12 col-md-4 mb-4">
     <div class="course__card course__card--large">
         <div class="card__item card__heading text-align-right co-primary">
             <span>{{$number}}</span>
